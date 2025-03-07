@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class TrackerService {
     public List<ExpenseRecord> getExpenseRecords() {
-        var record1 = new ExpenseRecord( new Date(2025, 3, 7), "Food", "TEST COMMENT", "Debit", 100);
+        var record1 = new ExpenseRecord( 100, new Date(2025, 3, 7), "Food", "TEST COMMENT", "Debit");
         List<ExpenseRecord> recordList = new ArrayList<>();
         recordList.add(record1);
         return recordList;
